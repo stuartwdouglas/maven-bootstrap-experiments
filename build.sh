@@ -16,6 +16,10 @@ cd ..
 
 cd projects
 
+build_project checkerframework
+build_project errorprone
+build_project j2objc
+build_project guarva
 build_project plexus-classworlds
 build_project javax-inject
 build_project slf4j

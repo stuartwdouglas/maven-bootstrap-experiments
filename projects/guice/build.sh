@@ -16,7 +16,7 @@ javac -d target/classes `find src/ -name \*.java | \
       grep -v IntegrationTest.java | \
       grep -v MethodInterceptionTest.java | \
       grep -v ProxyFactoryTest.java`
-jar -c --file target/guice-4.2.2-no_aop.jar target/classes
+jar -c --file target/guice-4.2.2-no_aop.jar -C target/classes .
 
 cp target/guice-4.2.2-no_aop.jar ../../../../dist/lib/
 cp ../COPYING ../../../../dist/lib/guice.license
