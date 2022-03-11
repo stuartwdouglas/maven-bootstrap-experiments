@@ -1,10 +1,11 @@
 #!/bin/sh
 
-rm -r dist
+rm -r dist lib
 mkdir -p dist/boot
 mkdir -p dist/lib
 mkdir -p dist/bin
 mkdir -p dist/conf
+mkdir lib
 
 build_project () {
 cd $1
