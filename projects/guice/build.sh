@@ -5,7 +5,8 @@ cd code-checkout
 git checkout 4.2.2
 cd core
 mkdir -p target
-javac -d target/classes `find src/ -name \*.java | \
+
+javac -d target/classes -cp "../../../../dist/lib/*"  `find src/ -name \*.java | \
       grep -v InterceptorBinding.java | \
       grep -v InterceptorBindingProcessor.java | \
       grep -v InterceptorStackCallback.java | \
