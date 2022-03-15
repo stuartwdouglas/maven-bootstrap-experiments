@@ -27,3 +27,6 @@ build_project plexus-classworlds
 build_project slf4j
 build_project guice
 build_project sisu
+build_project plexus-cipher
+build_project plexus-containers
+build_project plexus-interpolation
