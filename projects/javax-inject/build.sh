@@ -8,4 +8,4 @@ javac -d target/classes `find src -name \*.java`
 jar -c --file target/javax.inject-1.jar -C target/classes .
 
 cp target/javax.inject-1.jar ../../../dist/lib/
-cp ../../../ASL-2.txt ../../../dist/lib/
+cp ../../../ASL-2.txt ../../../dist/lib/javax.inject.license
