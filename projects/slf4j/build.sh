@@ -1,12 +1,18 @@
 #!/bin/sh
+#!/bin/sh
+. ../common.sh
+REPO=https://github.com/qos-ch/slf4j.git
+TAG=v_1.7.32
+JAR=slf4j-api-1.7.32.jar
+BUILD_PATH=slf4j-api
+LICENSE_TARGET_NAME=slf4j-api.license
+LICENSE_FILE=../LICENSE.txt
 
-git clone https://github.com/qos-ch/slf4j.git code-checkout
-cd code-checkout
-git checkout v_1.7.32
-cd slf4j-api
-mkdir -p target
-javac -d target/classes `find src/main/java/ -name \*.java`
-jar -c --file target/slf4j-api-1.7.32.jar -C target/classes .
+build
 
-cp target/slf4j-api-1.7.32.jar ../../../../dist/lib/
-cp ../LICENSE.txt ../../../../dist/lib/slf4j-api.license
+JAR=jcl-over-slf4j-1.7.32.jar
+BUILD_PATH=jcl-over-slf4j
+LICENSE_TARGET_NAME=jcl-over-slf4j.license
+
+build_jar
+

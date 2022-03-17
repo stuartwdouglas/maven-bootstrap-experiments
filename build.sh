@@ -18,6 +18,8 @@ cd ..
 cd projects
 
 build_project commons-cli
+build_project commons-io
+build_project commons-lang3
 build_project javax-inject
 build_project checkerframework
 build_project errorprone
